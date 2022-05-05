@@ -1,0 +1,79 @@
+.search input{
+    margin-top: 20px;
+    min-width: 130px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-color:#FC4655;
+    transition: .5s ease;
+    margin-right: 20px;
+}
+
+.search input:focus {
+    min-width: 250px;
+    outline: none !important;
+    border-color:#FC4655;
+  }
+
+  .weapons-wrapper{
+    margin-top: 50px;
+  }
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    flex-grow: 1;
+    background-color: #ECE8E1;
+    margin: 20px 0px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .card .head .link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  .card .head .link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .card .head .link img{
+    padding-bottom: 20px;
+  }
+
+  .card .body{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    background-color: #FC4655;
+  }
+  
+ 
+  
+  .link .line {
+    margin: 5px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 3px;
+    width: 30px;
+    background-color: #FC4655;
+    transition: .5s ease;
+    margin-bottom: 50px;
+  }
+  
+  .link:hover > .line{
+    width: 100%;
+  }
+  

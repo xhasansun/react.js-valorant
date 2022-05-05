@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Header';
+import Home from './pages/Home';
+import Agents from './pages/Agents';
+import Weapons from './pages/Weapons';
+import Skins from './pages/Skins';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/*' element={<Header />}>
+          <Route path='' element={<Home />} />
+          <Route path='agents' element={<Agents />} />
+          <Route path='weapons' element={<Weapons />} />
+          <Route path='weapons/:uuId' element={<Skins />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

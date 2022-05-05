@@ -1,0 +1,43 @@
+
+.container-fluid{
+    height: 100vh;
+    background-color: #FF4655;
+    position: relative;
+}
+
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-wrapper .main img{
+    width: 50%;
+}
+
+
+.contact{
+    height: 80px;
+    display: flex;
+    background-color: #212529;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.contact a{
+    margin: 0px 50px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact a svg:hover{
+    color: #FF4655;
+}
